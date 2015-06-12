@@ -1,0 +1,17 @@
+commit 43e1812139f4c24575fed813ab023eaeb7ed2b92
+Author: Omaar Juarez <mromarx3@gmail.com>
+Date:   Fri Jun 12 01:12:20 2015 -0500
+
+    Perfil Web Escrito
+
+commit 7be5dc720fd3e31baa5ae57fe245b795ea5d6f88
+Author: Omaar Juarez <mromarx3@gmail.com>
+Date:   Fri Jun 12 01:10:02 2015 -0500
+
+    Retoques
+
+commit fc14b4de823a81db6e1a06c7838fbba5262b91f5
+Author: Omaar Juarez <mromarx3@gmail.com>
+Date:   Fri Jun 12 01:05:47 2015 -0500
+
+    Archivos version tres
