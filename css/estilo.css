@@ -1,0 +1,207 @@
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+#main {
+   min-height: 400px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+}
+ 
+#main > article {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #cccc33;
+   border-radius: 7pt;
+   background: #dddd88;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+}
+  
+#main > nav {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+}
+  
+#main > aside {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+}
+
+.brand{
+  font-family: monospace;
+  font-size: 1.5em;
+}
+ 
+header, footer {
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 100px;
+   border: 1px solid #eebb55;
+   border-radius: 7pt;
+   background: #ffeebb;
+}
+ 
+  /* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+  
+#main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+}
+
+#main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+}
+  
+#main > nav, #main > aside, header, footer{
+    min-height: 100px;
+    max-height: 50px;
+ }
+}
+
+#scroll { 
+    position: relative;
+    height: 100%; /* Or whatever you want (eg. 400px) */
+    overflow: hidden;
+  }
+
+
+/*-_-*/
+
+  .footer {
+      padding: 70px 0;
+      margin-top: 70px;
+      border-top: 1px solid #E5E5E5;
+      background-color: whiteSmoke;
+      }     
+        body {
+          padding-top: 60px;          
+        }
+        .color-preview {
+          border: 1px solid #CCC;
+          margin: 2px;
+          zoom: 1;
+          vertical-align: top;
+          display: inline-block;
+          cursor: pointer;
+          overflow: hidden;
+          width: 20px;
+          height: 20px;
+        }
+        .rotate {  
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+        /* filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); */
+        -ms-transform:rotate(90deg);       
+    }   
+    .Arial{font-family:"Arial";}
+    .Helvetica{font-family:"Helvetica";}
+    .MyriadPro{font-family:"Myriad Pro";}
+    .Delicious{font-family:"Delicious";}
+    .Verdana{font-family:"Verdana";}
+    .Georgia{font-family:"Georgia";}
+    .Courier{font-family:"Courier";}
+    .ComicSansMS{font-family:"Comic Sans MS";}
+    .Impact{font-family:"Impact";}
+    .Monaco{font-family:"Monaco";}
+    .Optima{font-family:"Optima";}
+    .HoeflerText{font-family:"Hoefler Text";}
+    .Plaster{font-family:"Plaster";}
+    .Engagement{font-family:"Engagement";}
+
+
+ #logout { 
+width: 228px; /* Ancho del buscador */
+height: 22px;
+float: right;
+}
+
+ #login { 
+width: 228px; /* Ancho del buscador */
+height: 22px;
+float: right;
+text-align: center;
+margin-top: 10px;
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

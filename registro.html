@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="shortcut icon" href="img/geek.png">
+	<title>.:Registrate:.</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+
+  <script type="text/javascript" src="js/jquery.min.js" ></script>
+
+  <script type="text/javascript" src="js/parsley.min.js" ></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+      <header>
+
+        <h2>Regístrate, es gratis!</h2>
+
+        <p>El diseño que deseas en solo minutos</p>
+
+      </header>
+
+  <!-- / START Form -->
+
+    <form class='form' action="captura_nuevo_usuario.php" method="post" name="registro" data-parsley-validate onSubmit="return validacion()">
+
+      <div class='field'>
+
+        <label for='nombres'><spam>Nombres:</spam>
+
+        <input id='nombres' name='nombres' type='nombres' data-parsley-required="true" data-parsley-trigger="keyup">
+
+        </label>
+
+        <br>
+
+        <label for='apellidos'><spam>Apellidos:</spam>
+
+        <input id='apellidos' name='apellidos' type='apellidos' data-parsley-required="true" data-parsley-trigger="keyup">
+
+        </label>
+
+        <br>
+
+        <label for='telefono'><spam>Telefono:</spam>
+
+        <input id='telefono' name='telefono' type='tel' data-parsley-required="true" data-parsley-type="number" maxlength="12" data-parsley-trigger="keyup" onkeypress="ValidaSoloNumeros()">
+
+        </label>
+
+        <br>
+
+        <label for='email'><spam>Correo:</spam>
+
+        <input id='email' name='correo' type='email' data-parsley-type='email' data-parsley-required="true" data-parsley-trigger="keyup">
+
+        </label>
+
+        <br>
+
+        <label for='password'><spam>Clave:</spam>
+
+        <input id='password' name='clave' type='password' data-parsley-required="true" data-parsley-trigger="keyup">
+
+        </label>
+
+        <br>
+
+        <label for='rpassword'><spam>Repita Clave:</spam>
+
+        <input id='rpassword' name='rclave' type='password' data-parsley-required="true" data-parsley-trigger="keyup">
+
+        </label>
+
+      </div><br>
+
+      <div class='checkbox'>
+
+        <label for='checkbox'>
+
+          Al regístrarse usted acepta los
+
+          <a href='#'>Terminos y Condiciones</a>
+
+        </label>
+
+      </div>
+
+      <button name="btn_enviar">Regístrate</button>
+
+      <div class='checkbox2'>
+
+        <label for='checkbox2'>
+
+          Tienes una Cuenta?
+
+          <a href='login.html'>Iniciar sesión</a>
+
+        </label>
+
+      </div>
+
+    </form>
+
+  </div>
+
+  <script type="text/javascript">
+
+        function ValidaSoloNumeros() {
+
+         if ((event.keyCode < 48) || (event.keyCode > 57)) 
+
+          event.returnValue = false;
+
+        }
+
+  </script>
+
+</body>
+
+</html>

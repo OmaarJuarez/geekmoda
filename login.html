@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<title>.:Iniciar Sesión:.</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/geek.png">
+
+  <script type="text/javascript" src="js/script.js" ></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js" ></script>
+
+  <script type="text/javascript" src="js/parsley.min.js" ></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+      <header>
+
+        <h2>Ingresa!</h2>
+
+        <p>El diseño que deseas en solo minutos</p>
+
+      </header>
+
+  <!-- / START Form -->
+
+    <form class='form' action="verifica_usuario.php" method="post" data-parsley-validate>
+
+      <div class='field'>
+
+        <label for='email'>E-mail:</label>
+
+        <input id='email' name='correo' type='email' data-parsley-type='email' data-parsley-required='true' data-parsley-trigger='keyup'>
+
+        <br><br>
+
+        <label for='password'>Clave:</label>
+
+        <input id='password' name='clave' type='password' data-parsley-required="true" data-parsley-trigger="keyup">
+
+      </div><br><br>
+
+      <button name="btn_enviar">Ingresar</button>
+
+      <div class='checkbox2'>
+
+        <label for='checkbox2'>
+
+          ¿Aún no tienes una cuenta?
+
+          <a href='registro.html'>Registrarse</a>
+
+        </label>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

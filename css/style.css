@@ -1,0 +1,171 @@
+/* Form Styles */
+body{
+  background: #2196F3;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  width: 70%;
+  margin: 80px auto;
+}
+.container header {
+  text-align: center;
+}
+.container header h2 {
+  color: #333;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 15px;
+  padding: 0;
+  font-family: monospace;
+}
+.container header p {
+  color: #666;
+  font-size: 22px;
+  margin: 0 0 35px;
+  font-family: monospace;
+}
+/* Magic Starts here */
+.form {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.form:before,
+.form:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.form .field {
+  padding: 20px 20px 5px;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  transition: 0.3s linear;
+}
+.form .field:nth-child(2n) {
+  border-left: 1px solid #ffffff;
+}
+.form .field label {
+  color: #a1a1a1;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.form .field input {
+  outline: none;
+  background: #BBDEFB;
+  width: 100%;
+  border: 0;
+  border-color: #2196F3;
+  padding: 5px 0;
+  color: #666;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.3s linear;
+}
+.form .checkbox{
+  display: block;
+  clear: both;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 30px;
+  color: #a1a1a1;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.form .checkbox2{
+  display: block;
+  clear: both;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 1px;
+  color: #a1a1a1;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.form .checkbox a {
+  color: #009ddc;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 16px;
+}
+.form .checkbox2 a {
+  color: #009ddc;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 16px;
+}
+.form button {
+  cursor: pointer;
+  display: block;
+  background: #2196F3;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
+.form button:hover {
+  background: #90CAF9;
+}
+
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

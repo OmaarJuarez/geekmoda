@@ -1,0 +1,12 @@
+body {
+	font-family: 'Arial';
+}
+#contenedor {
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+h3 {
+	color: red;
+}
